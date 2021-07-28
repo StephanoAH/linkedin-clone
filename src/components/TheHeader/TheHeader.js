@@ -1,7 +1,13 @@
 import React from 'react';
 import styles from './TheHeader.module.css';
+import HeaderOptions from './HeaderOptions/HeaderOption';
+// Icons
 import SearchIcon from '@material-ui/icons/Search';
-// import HeaderOptions from './HeaderOptions/HeaderOption';
+import HomeIcon from '@material-ui/icons/Home';
+import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount';
+import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
+import ChatIcon from '@material-ui/icons/Chat';
+import NotificationsIcon from '@material-ui/icons/Notifications';
 
 function TheHeader() {
   return (
@@ -16,7 +22,17 @@ function TheHeader() {
           <input type="text" placeholder="Search" />
         </div>
       </div>
-      <div className={styles.HeaderRight}>{/*<HeaderOptions />*/}</div>
+      <div className={styles.HeaderRight}>
+        <HeaderOptions Icon={HomeIcon} title="Home" />
+        <HeaderOptions Icon={SupervisorAccountIcon} title="My network" />
+        <HeaderOptions Icon={BusinessCenterIcon} title="Jobs" />
+        <HeaderOptions Icon={ChatIcon} title="Messaging" />
+        <HeaderOptions Icon={NotificationsIcon} title="Notifications" />
+        <HeaderOptions
+          avatar="https://image.freepik.com/free-photo/confident-businessman-posing-outside_74855-1551.jpg"
+          title="Me"
+        />
+      </div>
     </header>
   );
 }

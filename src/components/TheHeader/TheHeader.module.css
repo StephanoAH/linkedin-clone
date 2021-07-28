@@ -1,6 +1,12 @@
 .Header {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
   position: sticky;
+  top: 0;
+  padding: 0.8em 0;
+  border-bottom: 0.1px solid #d3d3d3;
+  z-index: 999;
 }
 
 .HeaderLeft {
@@ -11,7 +17,7 @@
 .HeaderLeft > img {
   object-fit: contain;
   width: 2.5em;
-  margin: 0.5em;
+  margin: 0 0.5em;
 }
 
 .HeaderSearch {
@@ -21,7 +27,7 @@
   align-items: center;
   border-radius: 8px;
   background: #eef3f8;
-  color: gray;
+  color: #808080;
 }
 
 .HeaderSearch > input {
@@ -33,5 +39,5 @@
 }
 
 .HeaderRight {
-
+  display: flex;
 }
