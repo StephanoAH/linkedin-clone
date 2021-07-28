@@ -1,0 +1,37 @@
+.Header {
+  display: flex;
+  position: sticky;
+}
+
+.HeaderLeft {
+  display: flex;
+  align-items: center;
+}
+
+.HeaderLeft > img {
+  object-fit: contain;
+  width: 2.5em;
+  margin: 0.5em;
+}
+
+.HeaderSearch {
+  width: 10em;
+  height: 2em;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  background: #eef3f8;
+  color: gray;
+}
+
+.HeaderSearch > input {
+  width: 80%;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+.HeaderRight {
+
+}
