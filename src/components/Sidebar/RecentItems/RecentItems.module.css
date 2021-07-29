@@ -1,0 +1,19 @@
+.Container{
+  display: flex;
+  margin: 0.8em 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: gray;
+  cursor: pointer;
+}
+
+.Container:hover {
+  background-color: whitesmoke;
+  border-radius: 10px;
+  color: #464646;
+}
+
+.Hashtag {
+  margin-right: 0.4em;
+}
+
