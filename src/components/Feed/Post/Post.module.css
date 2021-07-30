@@ -1,0 +1,36 @@
+.Container {
+  padding: 1em;
+  margin-bottom: 0.6em;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.Header {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.Info {
+  margin-left: 0.6em;
+}
+
+.Info > h2 {
+  font-size: 1rem;
+}
+
+.Info > p {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.Body {
+  overflow-wrap: anywhere;
+}
+
+/* .Body > p { */
+/*  */
+/* } */
+
+.Buttons {
+  display: flex;
+}
