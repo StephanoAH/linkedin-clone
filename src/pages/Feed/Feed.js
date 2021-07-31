@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styles from './Feed.module.css';
-import InputOption from './InputOption/InputOption';
-import Post from './Post/Post';
+import InputOption from '../../components/InputOption/InputOption';
+import Post from '../../components/Post/Post';
 import { db } from '../../firebase';
 import {
   Create,
