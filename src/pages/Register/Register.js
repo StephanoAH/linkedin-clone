@@ -1,12 +1,14 @@
 import React from 'react';
-import styles from './Login.module.css';
-import { Link } from 'react-router-dom';
+import styles from './Register.module.css';
 
-function Login() {
+function Register() {
   const login = () => {
     return;
   };
 
+  const register = () => {
+    return;
+  };
   return (
     <div className={styles.Container}>
       <img
@@ -14,16 +16,18 @@ function Login() {
         alt="linkedin logo"
       />
       <form className={styles.FormContainer} action="">
+        <input type="text" required placeholder="Full name is required" />
+        <input type="text" required placeholder="Profile pic URL (Optional)" />
         <input type="text" required placeholder="Email" />
         <input type="text" required placeholder="Password" />
-        <button onClick={login}>Sign in</button>
+        <button onClick={register}>Sign in</button>
       </form>
       <div className={styles.RegisterContainer}>
-        <p>Not a member?</p>
-        <Link to="/register">Register now</Link>
+        <p>Already a member?</p>
+        <span onClick={login}>Login now</span>
       </div>
     </div>
   );
 }
 
-export default Login;
+export default Register;

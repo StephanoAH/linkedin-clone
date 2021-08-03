@@ -1,28 +1,31 @@
 import React from 'react';
 import styles from './App.module.css';
 import TheHeader from './components/TheHeader/TheHeader';
-import Sidebar from './components/Sidebar/Sidebar';
-import Feed from './pages/Feed/Feed';
-import Widgets from './components/Widgets/Widgets';
 import { useSelector } from 'react-redux';
 import { selectUser } from './features/user/userSlice';
+import Register from './pages/Register/Register';
 import Login from './pages/Login/Login';
+import Feed from './pages/Feed/Feed';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
   const user = useSelector(selectUser);
   return (
     <div className={styles.Container}>
-      <TheHeader />
-      {!user ? (
-        <Login />
-      ) : (
-        //TODO: Rearrange this inside of a page
-        <div className={styles.Body}>
-          <Sidebar />
-          <Feed />
-          <Widgets />
-        </div>
-      )}
+      <Router>
+        <TheHeader />
+        <Switch>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/register">
+            <Register />
+          </Route>
+          <Route path="/feed">
+            <Feed />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
