@@ -1,0 +1,41 @@
+.Container {
+  flex: 0.6;
+  margin: 0 1.4em;
+}
+
+.InputContainer {
+  padding: 1.5em;
+  margin-bottom: 1.2em;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.Input {
+  display: flex;
+  padding: 0.8em;
+  border: 1px solid lightgray;
+  border-radius: 2em;
+}
+
+.Input > form {
+  display: flex;
+  width: 100%;
+}
+
+.Input > form > input {
+  flex: 1;
+  margin-left: 0.6em;
+  border: none;
+  outline-width: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.Input > form > button {
+  display: none;
+}
+
+.InputOptions {
+  display: flex;
+  justify-content: space-around;
+}
